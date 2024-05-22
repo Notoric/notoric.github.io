@@ -62,10 +62,13 @@ header p {
     display: block;
     border-bottom: solid 3px #f05;
     position: absolute;
-    right: 0;
     width: 0;
     height: 36px;
     transition: width 0.3s ease;
+}
+
+#links a:after {
+    right: 0;
 }
 
 #links a:hover:after, #nav a:hover:after {
