@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+
+body {
+    background-color: #111;
+    color: #eee;
+    margin: 0;
+    font-family: "Fira Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+header {
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+    padding-inline: 16px;
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo {
+    font-weight: 500;
+}
+
+header p {
+    margin: 16px;
+    margin-inline: 0;
+}
+
+#links, #nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+
+#links {
+    right: 0;
+}
+
+#nav {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#links a, #nav a {
+    text-decoration: none;
+    color: #eee;
+    margin: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+#links a:after, #nav a:after {
+    content: "";
+    display: block;
+    border-bottom: solid 3px #f05;
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 36px;
+    transition: width 0.3s ease;
+}
+
+#links a:hover:after, #nav a:hover:after {
+    width: 100%;
+}
+
+#links a svg {
+    fill: #eee;
+    width: 20px;
+    height: 20px;
+    padding-right: 8px;
+}
+
+main {
+    padding-inline: 20px;
+}
