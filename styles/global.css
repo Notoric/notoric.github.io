@@ -269,14 +269,18 @@ em {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        width: 100%;
         transform: none;
     }
 
     #links a, #nav a {
         justify-content: center;
-        width: 100%;
         text-align: right;
+    }
+
+    #links a:after, #nav a:after {
+        right: auto;
+        height: 1.2em;
+
     }
 
     #nav {
