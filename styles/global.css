@@ -12,11 +12,11 @@ body {
     overflow: hidden;
 }
 
-#menu {
+#nav-btn {
     display: none;
 }
 
-#header {
+#navbar {
     background-color: black;
     margin: 0;
     overflow: hidden;
@@ -43,7 +43,7 @@ em {
     font-weight: 500;
 }
 
-#header p {
+#navbar p {
     margin: 16px;
     margin-inline: 0;
 }
@@ -211,7 +211,7 @@ em {
         font-size: 30px;
     }
 
-    #menu {
+    #nav-btn {
         content: "";
         display: block;
         position: absolute;
@@ -241,11 +241,11 @@ em {
         padding: 0px;
     }
 
-    #menu.expanded {
+    #nav-btn.expanded {
         transform: rotate(225deg);
     }
 
-    #header {
+    #navbar {
         flex-direction: column;
         height: calc(100vh - 120px);
         width: 100vw;
@@ -263,7 +263,7 @@ em {
         backdrop-filter: blur(10px);
     }
 
-    #header.expanded {
+    #navbar.expanded {
         transform: translateX(0);
     }
 
