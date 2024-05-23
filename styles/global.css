@@ -110,7 +110,7 @@ em {
 }
 
 .card {
-    border-radius: 4em;
+    border-radius: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,10 +130,10 @@ em {
     &::after {
         content: "";
         position: absolute;
-        height: calc(100% - 0.5em);
-        width: calc(100% - 0.5em);
+        height: calc(100% - 8px);
+        width: calc(100% - 8px);
         z-index: -2;
-        border-radius: 3.8em;
+        border-radius: 60px;
         background-image: linear-gradient(
             135deg,
             hsl(263, 25%, 10%),
@@ -161,8 +161,8 @@ em {
     background-image: url("/assets/headshot.jpg");
     background-size: cover;
     background-position: center;
-    width: 22em;
-    height: 22em;
+    width: 350px;
+    height: 350px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     position: relative;
@@ -211,15 +211,14 @@ em {
         content: "";
         display: block;
         position: absolute;
-        top: 0.5em;
-        right: 0.5em;
-        font-size: 5em;
+        top: 50px;
+        right: 50px;
         z-index: 11;
         margin: 0;
         background-image: url("/assets/plus.svg");
         background-size: contain;
-        height: 0.6em;
-        width: 0.6em;
+        height: 3em;
+        width: 3em;
         padding: 0px;
         transition: transform 0.5s ease;
         cursor: pointer;
@@ -229,9 +228,9 @@ em {
         content: "[N]";
         display: flex;
         position: absolute;
-        top: 1.1em;
-        left: 1.1em;
-        font-size: 2.5em;
+        top: 45px;
+        left: 50px;
+        font-size: 3em;
         font-weight: 700;
         z-index: 11;
         margin: 0;
@@ -295,12 +294,12 @@ em {
         gap: 70px;
         width: fit-content;
         padding: 80px;
+        margin-top: 120px;
     }
 
     .card::after {
-        height: calc(100% - 0.35em);
-        width: calc(100% - 0.35em);
-        border-radius: 3.9em;
+        height: calc(100% - 10px);
+        width: calc(100% - 10px);
     }
 
     #homepage-text {
@@ -309,8 +308,8 @@ em {
     }
 
     #homepage-img {
-        width: 16em;
-        height: 16em;
+        width: 300px;
+        height: 300px;
     }
 
     #hi {
@@ -335,5 +334,10 @@ em {
 
     #navbar #links {
         padding-bottom: 1em;
+    }
+
+    #homepage-img {
+        width: 500px;
+        height: 500px;
     }
 }
