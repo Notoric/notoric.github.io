@@ -221,20 +221,15 @@ em {
     font-weight: 700;
 }
 
-#aboutme {
+#box-with-title {
     border-radius: 60px;
-    background-image: repeating-conic-gradient(
-        #ff0050 0%,
-        #ff8000 33.333%,
-        #7520ff 66.666%,
-        #ff0050 100%
-    );
     margin-top: 100px !important;
     padding-inline: 50px;
     padding-block: 30px;
     position: relative;
     max-width: 800px;
     margin: auto;
+    overflow: hidden;
     &::after {
         content: "";
         position: absolute;
@@ -246,18 +241,41 @@ em {
         border-radius: 57px;
         background-color: #111;
     }
+    &::before {
+        content: "";
+        position: absolute;
+        top: calc(50% - 55vw);
+        left: calc(50% - 55vw);
+        height: 110vw;
+        width: 110vw;
+        z-index: 0;
+        background-image: repeating-conic-gradient(
+            #ff0050 0%,
+            #ff8000 33.333%,
+            #7520ff 66.666%,
+            #ff0050 100%
+        );
+        animation: rotate 10s linear infinite;
+    }
+}
+
+#aboutme {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    position: relative;
 }
 
 #aboutme h1 {
-    position: absolute;
-    top: -1.3em;
-    left: 70px;
     background-color: #111;
     padding-inline: 15px;
+    position: absolute;
+    top: -40px;
+    left: 70px;
     z-index: 2;
 }
 
-#aboutme p {
+#box-with-title p {
     position: relative;
     z-index: 2;
 }
