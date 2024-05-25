@@ -244,10 +244,10 @@ em {
     &::before {
         content: "";
         position: absolute;
-        top: calc(50% - 55vw);
-        left: calc(50% - 55vw);
-        height: 110vw;
-        width: 110vw;
+        top: calc(50% - 75vw);
+        left: calc(50% - 75vw);
+        height: 150vw;
+        width: 150vw;
         z-index: 0;
         background-image: repeating-conic-gradient(
             #ff0050 0%,
