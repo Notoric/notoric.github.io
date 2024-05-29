@@ -42,7 +42,6 @@ async function updateAge() {
     const ageElement = document.getElementById('age');
     ageElement.textContent = age;
 
-    console.log('Hello, world!');
   }, 50);
 }
 
