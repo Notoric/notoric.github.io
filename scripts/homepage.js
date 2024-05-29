@@ -21,6 +21,17 @@ topshrtct.addEventListener('click', () => {
   }
 });
 
+let links = document.getElementsById('navbar').getElementsByTagName('a');
+
+for (let link of links) {
+  link.addEventListener('click', () => {
+    const navbar = document.getElementById('navbar');
+    navbar.classList.remove('expanded');
+    navbtn.classList.remove('expanded');
+  });
+
+}
+
 async function updateAge() {
   setInterval(() => {
     const birthdate = new Date('2002-02-12T07:35:00Z');
