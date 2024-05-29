@@ -271,10 +271,10 @@ em {
     &::before {
         content: "";
         position: absolute;
-        top: calc(50% - 75vw);
-        left: calc(50% - 75vw);
-        height: 150vw;
-        width: 150vw;
+        top: calc(50% - 100vw);
+        left: calc(50% - 100vw);
+        height: 200vw;
+        width: 200vw;
         z-index: 0;
         background-image: repeating-conic-gradient(
             #ff0050 0%,
@@ -356,7 +356,7 @@ em {
     width: 400px;
     height: 280px;
     object-fit: cover;
-    border-radius: 3em;
+    border-radius: 2em;
     border: 0.2em solid #222;
     cursor: pointer;
 }
@@ -405,7 +405,7 @@ em {
 @media screen and (max-width: 1100px) {
 
     body {
-        font-size: 2.5vw;
+        font-size: 30px;
     }
 
     #logo {
@@ -533,12 +533,6 @@ em {
         width: 25em;
         height: 17.5em;
     }
-}
-
-@media (pointer: coarse) and (hover: none) and (max-width: 1100px) {
-    body {
-        font-size: 30px;
-    }
 
     #navbar #links {
         padding-bottom: 1em;
@@ -549,3 +543,4 @@ em {
         height: 500px;
     }
 }
+
