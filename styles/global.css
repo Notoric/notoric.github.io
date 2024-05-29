@@ -9,7 +9,7 @@ body {
     background-color: #111;
     color: #eee;
     margin: 0;
-    font-family: "Fira Mono", monospace;
+    font-family: "Barlow", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -176,6 +176,7 @@ em {
 }
 
 #homepage .card {
+    font-family: "Fira Mono", monospace;
     flex-direction: row;
     padding-block: 80px;
     gap: 70px;
@@ -290,7 +291,7 @@ em {
     margin: auto;
     position: relative;
     font-family: "Barlow", sans-serif;
-    font-size: 18px;
+    margin-bottom: 100px;
 }
 
 #aboutme h1 {
@@ -302,6 +303,10 @@ em {
     z-index: 2;
 }
 
+#aboutme p {
+    font-size: 18px;
+}
+
 #box-with-title p {
     position: relative;
     z-index: 2;
@@ -309,6 +314,89 @@ em {
 
 #age {
     font-family: "Fira Mono", monospace;
+}
+
+#projects {
+    margin: auto;
+    width: fit-content;
+}
+
+#projects h1 {
+    padding-left: 75px;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    width: fit-content;
+    margin: auto;
+    gap: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+.project:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.project .text-content {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+}
+
+.project h2 {
+    margin-bottom: 0;
+}
+
+.project img {
+    width: 400px;
+    height: 300px;
+    border-radius: 3em;
+    border: 0.2em solid #222;
+    cursor: pointer;
+}
+
+.project-tags {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0;
+    padding-block: 10px;
+    font-family: "Fira Mono", monospace;
+    font-weight: 500;
+}
+
+.HTML {
+    background-color: #E34F26 !important;
+}
+
+.CSS {
+    background-color: #1572B6 !important;
+}
+
+.JS {
+    background-color: #F7DF1E !important;
+    color: #000;
+    text-shadow: #eee 0px 0px 2px !important;
+}
+
+.project-tags p {
+    margin: 0;
+    font-size: 0.8em;
+    width: 40px;
+    border-radius: 1em;
+    background-color: #222;
+    padding: 0.2em;
+    text-align: center;
+    text-shadow: #111 0px 0px 2px;
+}
+
+.project-description {
+    max-width: 400px;
+    font-size: 1.1em;
+    margin: 0;
 }
 
 @media screen and (max-width: 1100px) {
@@ -427,6 +515,10 @@ em {
 
     #name {
         font-size: 3em;
+    }
+
+    .project {
+        flex-direction: column;
     }
 }
 
