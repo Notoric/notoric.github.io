@@ -22,10 +22,10 @@ body {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    height: 50px;
-    width: 50px;
-    padding: 20px;
-    background-color: #0008;
+    height: 3em;
+    width: 3em;
+    padding: 1.5em;
+    background-color: #0004;
     border-radius: 50%;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -71,6 +71,7 @@ em {
 }
 
 #logo {
+    font-family: "Fira Mono", monospace;
     font-weight: 500;
 }
 
@@ -298,13 +299,14 @@ em {
     background-color: #111;
     padding-inline: 15px;
     position: absolute;
-    top: -40px;
+    text-align: center;
+    top: -1.25em;
     left: 70px;
     z-index: 2;
 }
 
 #aboutme p {
-    font-size: 18px;
+    font-size: 1.1em;
 }
 
 #box-with-title p {
@@ -385,7 +387,7 @@ em {
 .project-tags p {
     margin: 0;
     font-size: 0.8em;
-    width: 40px;
+    width: 3.5em;
     border-radius: 1em;
     background-color: #222;
     padding: 0.2em;
@@ -394,12 +396,16 @@ em {
 }
 
 .project-description {
-    max-width: 400px;
+    max-width: 23em;
     font-size: 1.1em;
     margin: 0;
 }
 
 @media screen and (max-width: 1100px) {
+
+    body {
+        font-size: 2.5vw;
+    }
 
     #logo {
         display: none;
@@ -433,6 +439,7 @@ em {
         z-index: 11;
         margin: 0;
         padding: 0px;
+        font-family: "Fira Mono", monospace;
     }
 
     #nav-btn.expanded {
@@ -520,11 +527,10 @@ em {
     .project {
         flex-direction: column;
     }
-}
 
-@media (pointer: fine) and (hover: hover) and (max-width: 1100px) {
-    body {
-        font-size: 16px;
+    .project img {
+        width: 25em;
+        height: 17.5em;
     }
 }
 
