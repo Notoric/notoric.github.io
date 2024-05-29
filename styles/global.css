@@ -542,5 +542,13 @@ em {
         width: 500px;
         height: 500px;
     }
+
+    #aboutme {
+        padding-top: 70px;
+    }
+
+    #aboutme h1 {
+        transform: translateY(170px);
+    }
 }
 

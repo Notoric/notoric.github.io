@@ -21,7 +21,7 @@ topshrtct.addEventListener('click', () => {
   }
 });
 
-let links = document.getElementsById('navbar').getElementsByTagName('a');
+let links = document.getElementById('navbar').getElementsByTagName('a');
 
 for (let link of links) {
   link.addEventListener('click', () => {
@@ -29,7 +29,6 @@ for (let link of links) {
     navbar.classList.remove('expanded');
     navbtn.classList.remove('expanded');
   });
-
 }
 
 async function updateAge() {
