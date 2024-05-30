@@ -250,7 +250,6 @@ em {
 
 #box-with-title {
     border-radius: 60px;
-    margin-top: 100px !important;
     padding-inline: 50px;
     padding-block: 30px;
     position: relative;
@@ -292,7 +291,7 @@ em {
     margin: auto;
     position: relative;
     font-family: "Barlow", sans-serif;
-    margin-bottom: 100px;
+    padding-top: 100px !important;
 }
 
 #aboutme h1 {
@@ -300,7 +299,7 @@ em {
     padding-inline: 15px;
     position: absolute;
     text-align: center;
-    top: -1.25em;
+    top: calc(-1.25em + 100px);
     left: 70px;
     z-index: 2;
 }
@@ -321,6 +320,7 @@ em {
 #projects {
     margin: auto;
     width: fit-content;
+    padding-top: 100px;
 }
 
 #projects h1 {
@@ -425,7 +425,7 @@ em {
         content: "";
         display: block;
         position: fixed;
-        top: 50px;
+        top: 25px;
         right: 50px;
         z-index: 11;
         margin: 0;
@@ -438,11 +438,11 @@ em {
         cursor: pointer;
     }
 
-    body::before {
+    body::after {
         content: "[N]";
         display: flex;
         position: fixed;
-        top: 45px;
+        top: 20px;
         left: 50px;
         font-size: 3em;
         font-weight: 700;
@@ -450,6 +450,18 @@ em {
         margin: 0;
         padding: 0px;
         font-family: "Fira Mono", monospace;
+    }
+
+    body::before {
+        content: "";
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-image: linear-gradient(180deg, #000, #0000);
+        height: 8em;
+        z-index: 10;
     }
 
     #nav-btn.expanded {
@@ -543,6 +555,15 @@ em {
         height: 17.5em;
     }
 
+    .project:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    .project img {
+        width: calc(100vw - 192px);
+        height: auto;
+    }
+
     #navbar #links {
         padding-bottom: 1em;
     }
@@ -558,6 +579,7 @@ em {
 
     #aboutme h1 {
         transform: translateY(170px);
+        top: -150px;
     }
 }
 
