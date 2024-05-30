@@ -336,6 +336,7 @@ em {
     gap: 20px;
     align-content: center;
     justify-content: center;
+    margin-bottom: 35px;
 }
 
 .project:nth-child(odd) {
@@ -383,6 +384,14 @@ em {
     background-color: #F7DF1E !important;
     color: #000;
     text-shadow: #eee 0px 0px 2px !important;
+}
+
+.JAVA {
+    background-color: #f89820 !important;
+}
+
+.NOSQL {
+    background-color: #47A248 !important;
 }
 
 .project-tags p {
