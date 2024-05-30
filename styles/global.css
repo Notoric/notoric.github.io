@@ -43,7 +43,8 @@ body {
 }
 
 #navbar {
-    background-color: black;
+    background-color: #000c;
+    backdrop-filter: blur(10px);
     margin: 0;
     overflow: hidden;
     padding-inline: 30px;
@@ -291,7 +292,7 @@ em {
     margin: auto;
     position: relative;
     font-family: "Barlow", sans-serif;
-    padding-top: 100px !important;
+    padding-top: 100px !important; /* padding to make sure that the scroll anchor works properly with the navbar */
 }
 
 #aboutme h1 {
@@ -480,8 +481,6 @@ em {
         border: 0;
         padding-inline: 0;
         transition: transform 0.5s ease;
-        background-color: #000a;
-        backdrop-filter: blur(10px);
     }
 
     #navbar.expanded {
