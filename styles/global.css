@@ -62,7 +62,7 @@ body {
 main {
     max-width: 1300px;
     margin: 0 auto;
-    padding: 30px;
+    padding-inline: 30px;
     flex-direction: column;
 }
 
