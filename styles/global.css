@@ -395,6 +395,12 @@ em {
     background-color: #47A248 !important;
 }
 
+.date {
+    margin-left: auto !important;
+    color: #bbb !important;
+    width: 6.5em !important;
+}
+
 .project-tags p {
     margin: 0;
     font-size: 0.8em;
@@ -511,6 +517,10 @@ em {
 
     #links a svg {
         padding-right: 30px;
+    }
+
+    #homepage {
+        margin-bottom: 100px;
     }
 
     #homepage .card {
