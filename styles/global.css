@@ -196,7 +196,7 @@ em {
 }
 
 #homepage-img {
-    background-image: url("/assets/headshot.jpg");
+    background-image: url("/assets/headshot.png");
     background-size: cover;
     background-position: center;
     width: 350px;
