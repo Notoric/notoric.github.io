@@ -1,5 +1,6 @@
 const navbtn = document.getElementById('nav-btn');
 const topshrtct = document.getElementById('top-shrtct');
+const logo = document.getElementById('logo');
 
 navbtn.addEventListener('click', () => { 
   const navbar = document.getElementById('navbar');
@@ -16,6 +17,12 @@ window.addEventListener('scroll', () => {
 });
 
 topshrtct.addEventListener('click', () => {
+  if (window.scrollY > 100) {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+});
+
+logo.addEventListener('click', () => {
   if (window.scrollY > 100) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
