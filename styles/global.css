@@ -454,7 +454,6 @@ main {
     border-radius: 12%;
     border: none;
     display: block;
-    margin: auto;
     margin-block: 40px;
     cursor: pointer;
     padding: 0;
@@ -462,7 +461,10 @@ main {
 
 #cv-button-wrapper {
     color: var(--accent);
+    display: block;
     text-decoration: none;
+    width: fit-content;
+    margin: auto;
 }
 
 #cv-button::before {
@@ -714,7 +716,8 @@ main {
 
     #contact h1 {
         padding: 0;
-        width: fit-content;
+        width: 100%;
+        text-align: center;
         margin-inline: auto;
     }
 
@@ -724,7 +727,8 @@ main {
 
     .contact-area {
         display: grid;
-        width: calc(100vw - 192px);
+        max-width: calc(100vw - 192px);
+        width: fit-content;
     }
 
     .contact-area svg {
@@ -735,8 +739,9 @@ main {
     .contact-area a {
         grid-column: 2;
         grid-row: 1;
-        width: fit-content;
+        display: block;
         margin-top: auto;
+        width: 100%;
     }
 
     .contact-area p {
@@ -761,5 +766,9 @@ main {
 
     #contact-showcase {
         padding-inline: 20px;
+    }
+
+    .contact-area {
+        max-width: calc(100vw - 48px);
     }
 }
